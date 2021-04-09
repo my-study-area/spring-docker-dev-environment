@@ -23,6 +23,6 @@ Projeto foi desenvolvido com os conhecimentos adquiridos na aula [Usando Docker 
 
 - No terminal, dentro do projeto, execute `./mvnw clean package` para gerar o arquivo `.jar` na pasta target.
 
-- Ainda no terminal execute `docker build -t spring-app .` para gerar a imagem docker. E execute `docker run -p 8080:8080 spring-app` para iniciar a aplicação. Para acessar a api acesse [http://localhost:8080/olamundo](http://localhost:8080/olamundo)
+- Ainda no terminal execute `./mvnw clean package; docker-compose up --build` para gerar o jar e iniciar a aplicação. Para acessar a api acesse [http://localhost:8080/olamundo](http://localhost:8080/olamundo)
 
-- Agora basta alterar a classe `src/main/java/br/con/adrianoavelino/springdockerdevenvironment/controller/OlaMundoController.java`e atualizar o navegador para visualizar as alterações.
+- Agora basta alterar a classe `src/main/java/br/con/adrianoavelino/springdockerdevenvironment/controller/OlaMundoController.java`, atualizar o navegador e visualizar as alterações.
