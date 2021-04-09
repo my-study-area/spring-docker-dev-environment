@@ -1,4 +1,4 @@
-package br.com.adrianoavelino.springdockerdevenvironment.conrtroller;
+package br.com.adrianoavelino.springdockerdevenvironment.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +14,6 @@ public class OlaMundoController {
 
 	@GetMapping
 	public ResponseEntity<OlaMundo> exibirMensagem() {
-		return new ResponseEntity<>(new OlaMundo("Olá, Mundo!!"), HttpStatus.OK);
+		return new ResponseEntity<>(new OlaMundo("Olá, xxx"), HttpStatus.OK);
 	}
 }
