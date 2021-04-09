@@ -1,0 +1,20 @@
+version: "3.5"
+
+services:
+  maven:
+    container_name: mv
+    image: maven:3.6.1-jdk-8-alpine
+    volumes:
+      - ./:/app
+      - m2:/root/.m2
+    working_dir: /app
+    command: bash -c "mvn clean package"
+  app:
+    container_name: app-spring
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - maven
+volumes:
+  m2:
