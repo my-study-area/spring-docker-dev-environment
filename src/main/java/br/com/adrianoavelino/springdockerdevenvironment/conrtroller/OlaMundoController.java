@@ -1,4 +1,4 @@
-package br.con.adrianoavelino.springdockerdevenvironment.conrtroller;
+package br.com.adrianoavelino.springdockerdevenvironment.conrtroller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.con.adrianoavelino.springdockerdevenvironment.model.OlaMundo;
+import br.com.adrianoavelino.springdockerdevenvironment.model.OlaMundo;
 
 @RestController
 @RequestMapping("/olamundo")

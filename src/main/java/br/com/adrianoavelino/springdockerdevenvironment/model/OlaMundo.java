@@ -1,4 +1,4 @@
-package br.con.adrianoavelino.springdockerdevenvironment.model;
+package br.com.adrianoavelino.springdockerdevenvironment.model;
 
 public class OlaMundo {
 	

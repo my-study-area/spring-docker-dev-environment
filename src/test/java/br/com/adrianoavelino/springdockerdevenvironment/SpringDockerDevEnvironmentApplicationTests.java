@@ -1,4 +1,4 @@
-package br.con.adrianoavelino.springdockerdevenvironment;
+package br.com.adrianoavelino.springdockerdevenvironment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
