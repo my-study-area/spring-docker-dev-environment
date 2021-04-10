@@ -19,10 +19,19 @@ Projeto foi desenvolvido com os conhecimentos adquiridos na aula [Usando Docker 
 
 - No eclipse clique em `File` > `Open Projects from File System ...` > Na janela que abrir clique em `Directory` para selecionar o projeto, no campo `Import Source`, selecione o projeto e clique em `Finish`.
 
-- Com o projeto aberto clique no menu `Run` > `Run Configuration` > `Java Application`, clique em `New Configuration`. Digite um nome no campo `Name`, por exemplo Remote, certifique que está selecionado o projeto `springdockerdevenvironment` em `Projects`, no campo `Main Class ` digite `org.springframework.boot.devtools.RemoteSpringApplication`. Na aba `Arguments`, no campo `Program arguments` digite `http://localhost:8080` e clique no botão `Apply` e depois em `Run`.
+- Com o projeto aberto, clique no menu `Run` > `Run Configuration`.
+<image src="src/main/resources/static/img/run-runconfiguration.png" alt="Imagem do menu, onde as opções serão clicadas">
 
-- No terminal, dentro do projeto, execute `./mvnw clean package` para gerar o arquivo `.jar` na pasta target.
+- Clique o com o botão direito do mouse em `Java Application`, clique em `New Configuration`. 
+<image src="src/main/resources/static/img/java-javaapplication.png" alt="Imagem com as opções que serão clicadas">
 
-- Ainda no terminal execute `./mvnw clean package; docker-compose up --build` para gerar o jar e iniciar a aplicação. Para acessar a api acesse [http://localhost:8080/olamundo](http://localhost:8080/olamundo)
+- Digite um nome no campo `Name`, por exemplo Remote, certifique que está selecionado o projeto `springdockerdevenvironment` em `Project`, no campo `Main Class ` digite `org.springframework.boot.devtools.RemoteSpringApplication`.
+<image src="src/main/resources/static/img/java-javaapplication-remote.png" alt="Imagem com os campos preenchidos na aba Main">
 
-- Agora basta alterar a classe `src/main/java/br/con/adrianoavelino/springdockerdevenvironment/controller/OlaMundoController.java`, atualizar o navegador e visualizar as alterações.
+- Na aba `Arguments`, no campo `Program arguments` digite `http://localhost:8080` e clique no botão `Apply` e depois em `Run`.
+<image src="src/main/resources/static/img/java-javaapplication-arguments.png" alt="Imagem com os campos preenchidos na aba Arguments">
+
+- No terminal execute `./mvnw clean package; docker-compose up --build` para gerar o jar e iniciar a aplicação.
+
+- Agora basta alterar a classe `src/main/java/br/con/adrianoavelino/springdockerdevenvironment/controller/OlaMundoController.java` e visualizar as alterações em [http://localhost:8080/olamundo](http://localhost:8080/olamundo)
+.

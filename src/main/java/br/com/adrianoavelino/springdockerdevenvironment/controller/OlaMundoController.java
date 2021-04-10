@@ -14,6 +14,6 @@ public class OlaMundoController {
 
 	@GetMapping
 	public ResponseEntity<OlaMundo> exibirMensagem() {
-		return new ResponseEntity<>(new OlaMundo("Olá, xxx"), HttpStatus.OK);
+		return new ResponseEntity<>(new OlaMundo("Olá, Mundo!"), HttpStatus.OK);
 	}
 }
