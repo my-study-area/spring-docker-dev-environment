@@ -16,13 +16,14 @@ Projeto foi desenvolvido com os conhecimentos adquiridos na aula [Usando Docker 
 ## Começando
 - No terminal execute `git clone https://github.com/my-study-area/spring-docker-dev-environment.git` para baixar o projeto.
 
-
 - No eclipse clique em `File` > `Open Projects from File System ...` > Na janela que abrir clique em `Directory` para selecionar o projeto, no campo `Import Source`, selecione o projeto e clique em `Finish`.
+
+> Antes de iniciar as configurações no eclipse é necessário [verificar se o pom.xml e o application.properties possuem as configurações corretas](https://github.com/my-study-area/spring-docker-dev-environment/commit/b679087729e310268569cd196d8758db5b0289ae).
 
 - Com o projeto aberto, clique no menu `Run` > `Run Configuration`.
 <image src="src/main/resources/static/img/run-runconfiguration.png" alt="Imagem do menu, onde as opções serão clicadas">
 
-- Clique o com o botão direito do mouse em `Java Application`, clique em `New Configuration`. 
+- Clique o com o botão direito do mouse em `Java Application`, clique em `New`. 
 <image src="src/main/resources/static/img/java-javaapplication.png" alt="Imagem com as opções que serão clicadas">
 
 - Digite um nome no campo `Name`, por exemplo Remote, certifique que está selecionado o projeto `springdockerdevenvironment` em `Project`, no campo `Main Class ` digite `org.springframework.boot.devtools.RemoteSpringApplication`.
